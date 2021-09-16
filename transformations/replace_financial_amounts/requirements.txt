@@ -1,1 +1,2 @@
 ftfy==6.0.3
+forex-python==1.6
