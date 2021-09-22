@@ -74,10 +74,8 @@ The transformation can only change numeric financial amounts (i.e. it will not h
 
 Finally, the transformation is case-sensitive i.e., `13 usd` will not be considered as an amount.
 
-## Testing
+### Bank Rate
 
-You can test that everything works well by launching the test using the command below.
-Make sure that you are in `transformation/replace_financial_amounts` and do:
-```bash
-$ pytest -v
+Currently, the bank rate is fixed and reflects the rate of August 2021.
+An improvement to this transformation could be to use a library such as `https://forex-python.readthedocs.io/en/latest/usage.html` to get actualized bank rates.
 ```
